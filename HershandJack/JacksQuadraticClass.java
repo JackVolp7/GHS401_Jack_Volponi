@@ -4,7 +4,6 @@ public class JacksQuadraticClass
 {
     public static void main()
     {
-      /*
         String aS = JOptionPane.showInputDialog("Enter you a value");
         String bS = JOptionPane.showInputDialog("Enter you b value");
         String cS = JOptionPane.showInputDialog("Enter you c value");
@@ -28,7 +27,7 @@ public class JacksQuadraticClass
             System.out.println(((b*-1)-Math.sqrt((b*b)-(4*a*c)))/(2*a));
         }
             
-       */     
+            
         }
     }
 
