@@ -1,21 +1,21 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import java.util.concurrent.TimeUnit;
 
-/**
- * Write a description of class player here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class player extends Actor
 {
-    /**
-     * Act - do whatever the player wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    long lastBullet = System.currentTimeMillis();
+    GreenfootSound gunshot = new GreenfootSound("gunshot.wav");
+    
+    public static int healthP1=100;
+    public player()
+    {
+        healthP1 = 100;               
+    }
     public void act() 
     {
        movement();
        checkShot();
+       getWorld().showText("health Player 1: "+healthP1, 100, 500);
     }
     public void movement()
     {
@@ -58,10 +58,15 @@ public class player extends Actor
     }
     public void checkShot()
     {
-        if(Greenfoot.isKeyDown("space"))
+        long currentTime = System.currentTimeMillis();
+        
+        if(Greenfoot.isKeyDown("space") && currentTime >= lastBullet+600)
         {
+            gunshot.play();
             getWorld().addObject(new Bullet(),getX(),getY());
+            lastBullet=currentTime;
         }
     }
+    
+    
 }
-

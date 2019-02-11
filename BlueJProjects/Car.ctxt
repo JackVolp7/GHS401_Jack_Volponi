@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=cost\ MPG\ topSpeed\ isInStock
+comment0.target=Car(int,\ int,\ int,\ boolean)
+comment1.params=
+comment1.target=int\ getMPG()
+comment2.params=
+comment2.target=boolean\ getIsInStock()
+comment3.params=MPG
+comment3.target=void\ setMPG(int)
+comment4.params=isInStock
+comment4.target=void\ setIsInStock(boolean)
+numComments=5

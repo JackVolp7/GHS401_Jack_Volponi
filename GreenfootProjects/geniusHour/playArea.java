@@ -19,12 +19,14 @@ public class playArea extends World
     }
     private void prepare()
     {
-        player player = new player();
-        addObject(player,640,360);
+        addObject(new player(),640,360);
+        addObject(new player2(),640,260);
+        addObject(new Rock(),300,260);
+        addObject(new Rock(),1000,260);
     }
     public void act()
     {
-        
+    
     }
     
 }
