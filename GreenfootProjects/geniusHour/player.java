@@ -16,6 +16,11 @@ public class player extends Actor
        movement();
        checkShot();
        getWorld().showText("health Player 1: "+healthP1, 100, 500);
+       if(healthP1<=0)
+       {
+           getWorld().showText("Player2 Wins", getWorld().getWidth()/2, getWorld().getHeight()/2);
+           getWorld().removeObject(this);
+       }
     }
     public void movement()
     {

@@ -8,7 +8,7 @@ public class player2 extends Actor
     long lastBullet = System.currentTimeMillis();
     GreenfootSound gunshot = new GreenfootSound("gunshot.wav");
     public static int health=100;
-    private int timer;
+    private float timer;
     private int lastLocationX;
     private int lastLocationY;
     
@@ -75,10 +75,10 @@ public class player2 extends Actor
     }
     public void clipping()
     {
-        if(timer%30==0)
+        if(timer%0.5==0)
         {
             lastLocationX=this.getX();
-            lastLocationY=this
+            lastLocationY=this.getY();
         }
     }
 }
