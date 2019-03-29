@@ -10,31 +10,37 @@ public class Star extends Actor
 {
     private int lumi;
     
+
     public void act() 
     {
         this.lumi--;
         if(this.lumi<=0)
         {
+            getWorld().showText("",getX(),getY());
             getWorld().removeObject(this);
+            
+            
         }
-        //while(this.lumi>=0)
-        //{
-            getWorld().showText("Luminosity "+this.lumi,500,300);
-            getWorld().showText("X location "+this.getX(),500,250);
-            getWorld().showText("Y location "+this.getY(),500,200);
-        //}
-        
+        else if(this.lumi>0)
+        {
+            getWorld().showText(""+getLumi(),getX(),getY());
+            
+        }
     }  
+
     public Star()
     {
-        this.lumi=(int)Math.random()*501+500;
+        this.lumi=(int)500+Greenfoot.getRandomNumber(501);
     }
+
     public int getLumi()
     {
         return this.lumi;
     }
+
     public void setLumi(int lumi)
     {
         this.lumi=lumi;
     }
+
 }

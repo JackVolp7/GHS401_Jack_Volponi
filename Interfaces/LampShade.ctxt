@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=i\ p
+comment0.target=LampShade(boolean,\ double)
+comment1.params=
+comment1.target=java.lang.String\ shipped()
+comment2.params=
+comment2.target=boolean\ isInStock()
+numComments=3

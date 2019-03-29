@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Sri()
+comment1.params=legs\ alive\ hairCount\ isInIndianClub
+comment1.target=Sri(int,\ boolean,\ int,\ boolean)
+comment2.params=
+comment2.target=java.lang.String\ juggling()
+comment3.params=
+comment3.target=java.lang.String\ toString()
+numComments=4

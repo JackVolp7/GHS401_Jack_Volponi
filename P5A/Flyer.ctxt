@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Flyer()
+comment1.params=superPower\ speed\ motto
+comment1.target=Flyer(java.lang.String,\ int,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getMotto()
+comment3.params=
+comment3.target=java.lang.String\ goSuperFast()
+comment4.params=
+comment4.target=java.lang.String\ toString()
+numComments=5

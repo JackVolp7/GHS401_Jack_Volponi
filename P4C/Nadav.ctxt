@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Nadav()
+comment1.params=brain\ juggles\ legs\ alive
+comment1.target=Nadav(boolean,\ boolean,\ int,\ boolean)
+comment2.params=
+comment2.target=java.lang.String\ eatCusCus()
+comment3.params=
+comment3.target=java.lang.String\ toString()
+numComments=4

@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Write a description of class Ship here.
@@ -9,43 +9,43 @@ import java.util.ArrayList;
  */
 public class Ship extends Actor
 {
-    private ArrayList <Star> ofDavid; 
+    private List<Star> starData; 
     
     public void act() 
     {
-        move(10);
+        move(-10);
         if(isAtEdge())
         {
-            turn((int)Math.random()*181+1);
+            turn((int)1+Greenfoot.getRandomNumber(181));
         }
-        ArrayList<Star> ofDavid = (ArrayList<Star>)getWorld().getObjects(Star.class);
-        getWorld().showText("Max Luminosity: "+getMaxLuminosity(),400,250);
+        starData = getWorld().getObjects(Star.class);
+        getWorld().showText("Max Luminosity: "+getMaxLuminosity(),500,150);
+        getWorld().showText("Average Luminoity: "+averageLuminosity(),500,300);
         
     }
     public Ship()
     {
-        ArrayList ofDavid = new ArrayList<Star>();
-        
-    }
-    public double calcAverageLuminosity()
-    {
-        double total=0;
-        for(int i=0; i<ofDavid.size(); i++)
-        {
-            total+= ofDavid.get(i).getLumi();
-        }
-        return total/ofDavid.size();
+                
     }
     public int getMaxLuminosity()
     {
         int max=0;
-        for(int i=0; i<ofDavid.size(); i++)
+        for(int i=0; i<starData.size(); i++)
         {
-            if(this.ofDavid.get(i).getLumi()>max)
+            if(this.starData.get(i).getLumi()>max)
             {
-                max=this.ofDavid.get(i).getLumi();
+                max=this.starData.get(i).getLumi();
             }
         }
         return max;
+    }
+    public double averageLuminosity()
+    {
+        double average=0;
+        for(int i=0;i<starData.size();i++)
+        {
+            average+=starData.get(i).getLumi();
+        }
+        return (double)average/starData.size();
     }
 }

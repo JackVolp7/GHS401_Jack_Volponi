@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Mutant()
+comment1.params=superPower\ mutation\ motto
+comment1.target=Mutant(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getMotto()
+comment3.params=
+comment3.target=java.lang.String\ mutate()
+comment4.params=
+comment4.target=java.lang.String\ toString()
+numComments=5

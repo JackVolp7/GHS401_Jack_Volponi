@@ -18,10 +18,12 @@ public class MyWorld extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
         addObject(new Star(),100,200);
-        addObject(new Star(),0,200);
+        addObject(new Star(),50,200);
         addObject(new Star(),300,200);
-        addObject(new Star(),300,400);
-        addObject(new Star(),150,500);
-        addObject(new Star(),50,600);
+        addObject(new Star(),300,300);
+        addObject(new Star(),150,300);
+        addObject(new Star(),50,300);
+        
+        addObject(new Ship(),500,100);
     }
 }

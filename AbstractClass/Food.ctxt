@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=c\ n
+comment0.target=Food(int,\ java.lang.String)
+comment1.params=
+comment1.target=int\ getCalories()
+comment2.params=peices
+comment2.target=java.lang.String\ caloriesDivided(int)
+comment3.params=
+comment3.target=java.lang.String\ toString()
+numComments=4
